@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: PostProject
+#  jdbc
+  datasource:
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: ${DATABASE_DRIVERCLASSNAME}
+    url: ${DATABASE_URL}
+
+#  jpa
+  jpa:
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+
+logging:
+  config: classpath:logback-spring-dev.xml
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+
+
