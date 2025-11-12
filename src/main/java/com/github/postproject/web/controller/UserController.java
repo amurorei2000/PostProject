@@ -35,4 +35,14 @@ public class UserController {
         log.info("login user: {}", user);
         return ResponseEntity.status(HttpStatus.OK).body(user);
     }
+
+    @Operation(summary = "로그아웃")
+    @PostMapping("/signOut")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<String> signOut() {
+        Boolean user = userService.signOut();
+        String result = "logout user: " + (user ? "success" : "fail");
+        log.info("logout user: {}", user);
+        return ResponseEntity.status(HttpStatus.OK).body(result);
+    }
 }

@@ -97,4 +97,11 @@ public class UserService {
             throw new RuntimeException("사용자를 생성하는 도중에 에러가 발생했습니다!");
         }
     }
+
+    public Boolean signOut() {
+        // access token 블랙리스트에 등록
+
+
+        return true;
+    }
 }

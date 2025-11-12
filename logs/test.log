@@ -898,3 +898,582 @@ This generated password is for development use only. Your security configuration
 2025-11-11 02:18:15.311 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-11 02:18:15.313 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
 2025-11-11 02:18:15.318 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:21:19.246 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 14840 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:21:19.292 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:21:19.323 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:21:19.323 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:21:19.968 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:21:19.969 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:21:19.992 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:21:19.993 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:21:19.994 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:21:19.995 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:21:19.996 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:21:19.997 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:21:20.004 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:21:20.005 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:21:20.032 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:21:20.382 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:21:20.389 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:21:20.390 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:21:20.390 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:21:20.469 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:21:20.469 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1145 ms
+2025-11-13 02:21:20.611 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:21:20.837 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@679489d8
+2025-11-13 02:21:20.838 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:21:20.863 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:21:20.893 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:21:20.911 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:21:21.095 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:21:21.160 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:21:21.748 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:21:21.750 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:21:22.181 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: c4bbcf70-971c-49b5-a4fc-b59870a2c6e5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:21:22.186 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:21:22.278 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:21:22.525 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:21:22.540 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:21:22.555 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:21:22.560 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.686 seconds (process running for 4.299)
+2025-11-13 02:21:53.122 [http-nio-8080-exec-1] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:21:53.122 [http-nio-8080-exec-1] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:21:53.124 [http-nio-8080-exec-1] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 2 ms
+2025-11-13 02:23:18.565 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:23:18.569 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:23:18.572 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:23:18.574 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 02:23:18.579 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:23:22.111 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 14176 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:23:22.113 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:23:22.144 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:23:22.145 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:23:22.735 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:23:22.736 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:23:22.761 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:23:22.763 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:23:22.764 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:23:22.765 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:23:22.766 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:23:22.766 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:23:22.774 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:23:22.774 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:23:22.799 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:23:23.171 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:23:23.180 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:23:23.182 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:23:23.182 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:23:23.229 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:23:23.229 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1084 ms
+2025-11-13 02:23:23.325 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:23:23.553 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29ac5bb2
+2025-11-13 02:23:23.555 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:23:23.579 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:23:23.617 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:23:23.640 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:23:23.856 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:23:23.924 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:23:24.579 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:23:24.581 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:23:25.038 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: a4af4049-f984-43c7-b6ab-dbb03ab1ee21
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:23:25.043 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:23:25.130 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:23:25.405 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:23:25.420 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:23:25.437 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:23:25.443 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.762 seconds (process running for 4.498)
+2025-11-13 02:23:28.528 [http-nio-8080-exec-1] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:23:28.528 [http-nio-8080-exec-1] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:23:28.529 [http-nio-8080-exec-1] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:25:27.466 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:25:27.471 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:25:27.474 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:25:27.476 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 02:25:27.481 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:25:31.082 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 43512 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:25:31.085 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:25:31.118 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:25:31.118 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:25:31.682 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:25:31.682 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:25:31.706 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:25:31.707 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:25:31.707 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:25:31.708 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:25:31.709 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:25:31.710 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:25:31.717 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:25:31.718 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:25:31.746 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:25:32.117 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:25:32.127 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:25:32.128 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:25:32.128 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:25:32.173 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:25:32.173 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1055 ms
+2025-11-13 02:25:32.265 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:25:32.497 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27549d9c
+2025-11-13 02:25:32.499 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:25:32.523 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:25:32.557 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:25:32.580 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:25:32.793 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:25:32.860 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:25:33.485 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:25:33.487 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:25:33.913 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: f9c3a4f9-06ac-453d-87d3-48319b897699
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:25:33.918 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:25:34.001 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:25:34.245 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:25:34.262 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:25:34.278 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:25:34.284 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.575 seconds (process running for 4.157)
+2025-11-13 02:25:52.643 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:25:52.643 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:25:52.644 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:29:53.540 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:29:53.545 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:29:53.548 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:29:53.550 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 02:29:53.555 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:29:56.671 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 8672 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:29:56.673 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:29:56.704 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:29:56.704 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:29:57.283 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:29:57.284 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:29:57.308 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:29:57.310 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:29:57.310 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:29:57.311 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:29:57.312 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:29:57.313 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:29:57.320 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:29:57.320 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:29:57.348 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:29:57.705 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:29:57.715 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:29:57.716 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:29:57.716 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:29:57.760 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:29:57.760 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1056 ms
+2025-11-13 02:29:57.853 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:29:58.087 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44471a97
+2025-11-13 02:29:58.089 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:29:58.114 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:29:58.147 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:29:58.169 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:29:58.384 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:29:58.454 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:29:59.097 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:29:59.099 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:29:59.547 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: 7886db09-6e61-4718-898b-9f1af61e75fb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:29:59.552 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:29:59.641 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:29:59.885 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:29:59.903 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:29:59.921 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:29:59.926 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.612 seconds (process running for 4.174)
+2025-11-13 02:30:05.230 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:30:05.230 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:30:05.231 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:31:33.717 [File Watcher] [34mINFO [0;39m [36mo.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener[0;39m - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-13 02:31:33.720 [Thread-5] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:31:33.721 [tomcat-shutdown] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Pausing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:31:33.725 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:31:33.725 [Thread-5] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Stopping ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:31:33.728 [Thread-5] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:31:33.730 [Thread-5] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 02:31:33.735 [Thread-5] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:31:33.800 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 8672 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:31:33.800 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:31:33.969 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:31:33.970 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:31:33.976 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:31:33.977 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:31:33.978 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:31:33.979 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:31:33.980 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:31:33.980 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:31:33.982 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:31:33.982 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:31:33.995 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 11 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:31:34.060 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:31:34.060 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:31:34.061 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:31:34.061 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:31:34.085 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:31:34.085 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 284 ms
+2025-11-13 02:31:34.107 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Starting...
+2025-11-13 02:31:34.117 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55126850
+2025-11-13 02:31:34.117 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Start completed.
+2025-11-13 02:31:34.117 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:31:34.119 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:31:34.124 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:31:34.126 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:31:34.199 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:31:34.199 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:31:34.312 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: 5c4617d7-de8b-4baa-b662-9979610a558c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:31:34.312 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:31:34.330 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:31:34.381 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:31:34.387 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:31:34.391 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:31:34.393 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 0.613 seconds (process running for 98.641)
+2025-11-13 02:31:34.394 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged
+2025-11-13 02:31:37.016 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:31:37.016 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:31:37.017 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:47:00.866 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:47:00.870 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:47:00.872 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:47:00.873 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Shutdown initiated...
+2025-11-13 02:47:00.875 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-2 - Shutdown completed.
+2025-11-13 02:47:02.942 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 43868 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:47:02.944 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:47:02.974 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:47:02.974 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:47:03.558 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:47:03.559 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:47:03.585 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:47:03.586 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:47:03.587 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:47:03.587 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:47:03.588 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:47:03.589 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:47:03.597 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:47:03.597 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:47:03.625 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:47:03.996 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:47:04.006 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:47:04.007 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:47:04.007 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:47:04.051 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:47:04.051 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1076 ms
+2025-11-13 02:47:04.143 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:47:04.374 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e7b858c
+2025-11-13 02:47:04.376 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:47:04.400 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:47:04.434 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:47:04.457 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:47:04.666 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:47:04.740 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:47:05.439 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:47:05.442 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:47:06.011 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: d6ef5964-24b2-4a84-9978-641a9c5a2cc9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:47:06.016 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:47:06.103 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:47:06.371 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:47:06.385 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:47:06.401 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:47:06.406 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.843 seconds (process running for 4.423)
+2025-11-13 02:47:10.596 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:47:10.596 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:47:10.597 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:49:50.078 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:49:50.083 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:49:50.086 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:49:50.088 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 02:49:50.093 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:49:53.123 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 19068 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:49:53.126 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:49:53.166 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:49:53.166 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:49:53.778 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:49:53.779 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:49:53.804 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:49:53.805 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:49:53.806 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:49:53.807 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:49:53.808 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:49:53.808 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:49:53.815 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:49:53.816 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:49:53.845 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:49:54.201 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:49:54.209 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:49:54.211 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:49:54.211 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:49:54.255 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:49:54.255 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1088 ms
+2025-11-13 02:49:54.347 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:49:54.571 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43e66362
+2025-11-13 02:49:54.573 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:49:54.599 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:49:54.631 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:49:54.652 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:49:54.855 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:49:54.924 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:49:55.570 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:49:55.572 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:49:55.978 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: 3a8817a4-b1a4-4538-b838-81454df4b11f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:49:55.983 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:49:56.072 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:49:56.308 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:49:56.322 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:49:56.337 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:49:56.342 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.623 seconds (process running for 4.231)
+2025-11-13 02:49:58.505 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:49:58.505 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:49:58.506 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:50:09.011 [http-nio-8080-exec-2] [39mDEBUG[0;39m [36morg.hibernate.SQL[0;39m - 
+    select
+        p1_0.id,
+        p1_0.content,
+        p1_0.created_at,
+        p1_0.like_cnt,
+        p1_0.title,
+        p1_0.updated_at,
+        p1_0.writer_id,
+        p1_0.view_cnt,
+        p1_0.writer_nm 
+    from
+        posts p1_0
+2025-11-13 02:50:51.659 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 02:50:51.664 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 02:50:51.667 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:50:51.669 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 02:50:51.674 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 02:57:38.027 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 35004 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 02:57:38.029 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 02:57:38.064 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 02:57:38.064 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 02:57:38.590 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:57:38.591 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 02:57:38.612 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:57:38.613 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:57:38.614 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:57:38.615 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:57:38.616 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 02:57:38.616 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2025-11-13 02:57:38.624 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 02:57:38.625 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 02:57:38.649 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
+2025-11-13 02:57:38.971 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 02:57:38.982 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:57:38.983 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 02:57:38.983 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 02:57:39.020 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 02:57:39.021 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 955 ms
+2025-11-13 02:57:39.099 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 02:57:39.282 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a24227e
+2025-11-13 02:57:39.283 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 02:57:39.304 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 02:57:39.336 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 02:57:39.356 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 02:57:39.530 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 02:57:39.593 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 02:57:40.130 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 02:57:40.132 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 02:57:40.494 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: c7107bcd-a1f9-482f-b5f2-48d672539ffc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 02:57:40.498 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 02:57:40.569 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 02:57:40.779 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 02:57:40.793 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 02:57:40.806 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 02:57:40.811 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.094 seconds (process running for 3.529)
+2025-11-13 02:57:48.594 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 02:57:48.594 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 02:57:48.595 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 02:57:48.673 [http-nio-8080-exec-2] [39mDEBUG[0;39m [36morg.hibernate.SQL[0;39m - 
+    select
+        p1_0.id,
+        p1_0.content,
+        p1_0.created_at,
+        p1_0.like_cnt,
+        p1_0.title,
+        p1_0.updated_at,
+        p1_0.writer_id,
+        p1_0.view_cnt,
+        p1_0.writer_nm 
+    from
+        posts p1_0
+2025-11-13 03:00:02.423 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 03:00:02.428 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 03:00:02.430 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 03:00:02.432 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 03:00:02.436 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
+2025-11-13 03:00:05.288 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Starting PostProjectApplication using Java 21.0.8 with PID 41168 (E:\Programming\SuperCoding\PostProject\build\classes\java\main started by amuro in E:\Programming\SuperCoding\PostProject)
+2025-11-13 03:00:05.294 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - The following 1 profile is active: "dev"
+2025-11-13 03:00:05.329 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-13 03:00:05.330 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-13 03:00:05.930 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 03:00:05.931 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-11-13 03:00:05.968 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.comment.CommentsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 03:00:05.970 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.post.PostsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 03:00:05.972 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.role.RolesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 03:00:05.973 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UserRoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 03:00:05.975 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.github.postproject.repository.user.UsersRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-11-13 03:00:05.975 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 38 ms. Found 0 JDBC repository interfaces.
+2025-11-13 03:00:05.984 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-11-13 03:00:05.984 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-13 03:00:06.008 [restartedMain] [34mINFO [0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
+2025-11-13 03:00:06.350 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port 8080 (http)
+2025-11-13 03:00:06.358 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"]
+2025-11-13 03:00:06.359 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardService[0;39m - Starting service [Tomcat]
+2025-11-13 03:00:06.360 [restartedMain] [34mINFO [0;39m [36mo.a.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-13 03:00:06.400 [restartedMain] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext
+2025-11-13 03:00:06.401 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1071 ms
+2025-11-13 03:00:06.482 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Starting...
+2025-11-13 03:00:06.678 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56b66544
+2025-11-13 03:00:06.679 [restartedMain] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Start completed.
+2025-11-13 03:00:06.701 [restartedMain] [34mINFO [0;39m [36mo.h.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-13 03:00:06.730 [restartedMain] [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-13 03:00:06.750 [restartedMain] [34mINFO [0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m - HHH000026: Second-level cache disabled
+2025-11-13 03:00:06.946 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-13 03:00:07.008 [restartedMain] [34mINFO [0;39m [36mo.hibernate.orm.connections.pooling[0;39m - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.43
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-13 03:00:07.578 [restartedMain] [34mINFO [0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-13 03:00:07.580 [restartedMain] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 03:00:07.971 [restartedMain] [31mWARN [0;39m [36mo.s.b.a.s.s.UserDetailsServiceAutoConfiguration[0;39m - 
+
+Using generated security password: b6fa8502-2ecb-4cee-b0a2-3c4083245d9c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-11-13 03:00:07.976 [restartedMain] [34mINFO [0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-11-13 03:00:08.052 [restartedMain] [34mINFO [0;39m [36mo.s.v.b.OptionalValidatorFactoryBean[0;39m - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-11-13 03:00:08.259 [restartedMain] [34mINFO [0;39m [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729
+2025-11-13 03:00:08.273 [restartedMain] [34mINFO [0;39m [36mo.a.coyote.http11.Http11NioProtocol[0;39m - Starting ProtocolHandler ["http-nio-8080"]
+2025-11-13 03:00:08.286 [restartedMain] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.TomcatWebServer[0;39m - Tomcat started on port 8080 (http) with context path '/'
+2025-11-13 03:00:08.291 [restartedMain] [34mINFO [0;39m [36mc.g.p.PostProjectApplication[0;39m - Started PostProjectApplication in 3.369 seconds (process running for 3.828)
+2025-11-13 03:00:25.446 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/][0;39m - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-13 03:00:25.446 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Initializing Servlet 'dispatcherServlet'
+2025-11-13 03:00:25.447 [http-nio-8080-exec-2] [34mINFO [0;39m [36mo.s.web.servlet.DispatcherServlet[0;39m - Completed initialization in 1 ms
+2025-11-13 03:00:25.557 [http-nio-8080-exec-2] [39mDEBUG[0;39m [36morg.hibernate.SQL[0;39m - 
+    select
+        p1_0.id,
+        p1_0.content,
+        p1_0.created_at,
+        p1_0.like_cnt,
+        p1_0.title,
+        p1_0.updated_at,
+        p1_0.writer_id,
+        p1_0.view_cnt,
+        p1_0.writer_nm 
+    from
+        posts p1_0 
+    where
+        p1_0.writer_nm=?
+2025-11-13 03:00:49.293 [http-nio-8080-exec-3] [39mDEBUG[0;39m [36morg.hibernate.SQL[0;39m - 
+    select
+        p1_0.id,
+        p1_0.content,
+        p1_0.created_at,
+        p1_0.like_cnt,
+        p1_0.title,
+        p1_0.updated_at,
+        p1_0.writer_id,
+        p1_0.view_cnt,
+        p1_0.writer_nm 
+    from
+        posts p1_0 
+    where
+        p1_0.writer_nm=?
+2025-11-13 03:01:58.763 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-13 03:01:58.767 [tomcat-shutdown] [34mINFO [0;39m [36mo.s.b.w.e.tomcat.GracefulShutdown[0;39m - Graceful shutdown complete
+2025-11-13 03:01:58.770 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-13 03:01:58.772 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated...
+2025-11-13 03:01:58.776 [SpringApplicationShutdownHook] [34mINFO [0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed.
