@@ -43,7 +43,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(
                         auth -> auth
                                 // 인증 없이 사용 가능한 uri
-                                .requestMatchers("/resources/static/**", "/api/users/*", "/api/post/*").permitAll()
+                                .requestMatchers("/resources/static/**", "/api/users/*", "/api/post/**", "/api/comment/**", "/api/like/**").permitAll()
                                 .anyRequest().authenticated()
                 );
                 // 필터 우선 적용 처리

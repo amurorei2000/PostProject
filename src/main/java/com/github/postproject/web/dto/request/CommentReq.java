@@ -9,8 +9,8 @@ import lombok.ToString;
 @Getter
 @NoArgsConstructor
 @ToString
-public class PostReq {
-    private String writerId;
-    private String title;
-    private String content;
+public class CommentReq {
+    String writerId;
+    String content;
+    Integer postId;
 }

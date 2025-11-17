@@ -11,10 +11,8 @@ import com.github.postproject.service.exceptions.NotAcceptException;
 import com.github.postproject.service.exceptions.NotFoundException;
 import com.github.postproject.web.dto.request.UserReq;
 import com.github.postproject.web.dto.response.UserRes;
-import jdk.jshell.spi.ExecutionControl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -73,10 +71,8 @@ public class UserService {
         String password = userReq.getPassword();
 
         try {
-            Users foundUser = usersRepository.findByEmail(email);
-            if (foundUser == null) {
-                throw new NotFoundException("해당 아이디를 가진 사용자가 없습니다.");
-            }
+            Users foundUser = usersRepository.findByEmail(email)
+                    .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 사용자가 없습니다."));
 
             if (foundUser.getPassword().equals(password)) {
                 return UserRes.builder()
