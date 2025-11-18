@@ -1,0 +1,40 @@
+package com.github.postproject.web.filters;
+
+import com.github.postproject.config.JwtTokenProvider;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import java.io.IOException;
+
+@RequiredArgsConstructor
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    private final JwtTokenProvider jwtTokenProvider;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        // request 헤더에서 jwt 토큰 정보 가져오기
+        String bearerToken = jwtTokenProvider.resolveToken(request);
+
+        // 토큰 예외 처리
+        if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
+            // Bearer 토큰에서 실제 토큰 부분만 자르기
+            String jwtToken = bearerToken.substring(7);
+
+            if (jwtTokenProvider.validateToken(jwtToken)) {
+                // 스프링 시큐리티 컨텍스트에 authentication(인증 정보)을 등록해서 사용자의 신원을 확인
+                Authentication auth = jwtTokenProvider.getAuthentication(jwtToken);
+                SecurityContextHolder.getContext().setAuthentication(auth);
+            }
+        }
+
+        // 필터 체인에 등록
+        filterChain.doFilter(request, response);
+    }
+}

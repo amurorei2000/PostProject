@@ -1,6 +1,6 @@
 package com.github.postproject.config;
 
-import com.github.postproject.service.UserService;
+import com.github.postproject.web.filters.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,13 +21,17 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SecurityConfiguration {
 
+    private final JwtTokenProvider jwtTokenProvider;
+
     // 스프링 시큐리티 옵션 설정
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.headers(header -> header.frameOptions(
                         frameOptions -> frameOptions.sameOrigin())
                 )
+                // 로그인 폼 사용 안함
                 .formLogin(AbstractHttpConfigurer::disable)
+                // CSRF 설정 끄기
                 .csrf(AbstractHttpConfigurer::disable)
                 // CORS 설정 적용
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
@@ -45,9 +49,9 @@ public class SecurityConfiguration {
                                 // 인증 없이 사용 가능한 uri
                                 .requestMatchers("/resources/static/**", "/api/users/*", "/api/post/**", "/api/comment/**", "/api/like/**").permitAll()
                                 .anyRequest().authenticated()
-                );
+                )
                 // 필터 우선 적용 처리
-//                .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
@@ -60,7 +64,7 @@ public class SecurityConfiguration {
         configuration.setAllowedOrigins(List.of("http://localhost:63342"));
         // Token을 주고 받는 것을 허용
         configuration.setAllowCredentials(true);
-        configuration.addExposedHeader("X-AUTH-TOKEN");
+        configuration.addExposedHeader("Authorization");
         // 헤더 설정 허용
         configuration.addAllowedHeader("*");
         // API 메소드 허용

@@ -31,3 +31,5 @@ logging:
         SQL: DEBUG
 
 
+jwt:
+  secret-key-source: GYeDVHHKWpLG4xH+WMn4C0Dmze6kNM1D0UBXlDSfF3pQ2dMW4wYpgu4t4nDvXJO7tx0IbPj7wxTky/GdxN3+Rg==
