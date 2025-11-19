@@ -2,7 +2,9 @@ package com.github.postproject.web.controller;
 
 import com.github.postproject.config.JwtTokenProvider;
 import com.github.postproject.service.AuthService;
+import com.github.postproject.web.dto.auth.Login;
 import com.github.postproject.web.dto.auth.SignUp;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,7 +22,6 @@ public class AuthController {
     @PostMapping(value = "/register")
     public String register(@RequestBody SignUp signUpRequest) {
         boolean isSuccess = authService.signUp(signUpRequest);
-
         return isSuccess ? "회원 가입에 성공하였습니다." : "회원 가입에 실패하였습니다.";
     }
 
@@ -29,4 +30,5 @@ public class AuthController {
         String token = authService.login(loginRequest);
         httpServletResponse.setHeader("Authorization", token);
         return "로그인에 성공하였습니다.";
+    }
 }

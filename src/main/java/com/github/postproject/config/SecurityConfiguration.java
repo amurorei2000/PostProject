@@ -4,6 +4,8 @@ import com.github.postproject.web.filters.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
@@ -47,7 +49,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(
                         auth -> auth
                                 // 인증 없이 사용 가능한 uri
-                                .requestMatchers("/resources/static/**", "/api/users/*", "/api/post/**", "/api/comment/**", "/api/like/**").permitAll()
+                                .requestMatchers("/resources/static/**", "/api/users/*", "/api/post/**", "/api/comment/**", "/api/like/**", "/api/sign/**").permitAll()
                                 .anyRequest().authenticated()
                 )
                 // 필터 우선 적용 처리
@@ -75,5 +77,11 @@ public class SecurityConfiguration {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
+    }
+
+    // 인증 관리자 가져오기
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
     }
 }
