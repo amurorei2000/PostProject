@@ -44,4 +44,21 @@ public class Posts {
 
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
+
+    public void increaseLikeCnt() {
+        this.likeCnt++;
+    }
+
+    public void decreaseLikeCnt() {
+        this.likeCnt--;
+    }
+
+    public void increaseViewCnt() {
+        this.viewCnt++;
+    }
+
+    public void decreaseViewCnt() {
+        this.viewCnt--;
+    }
+
 }

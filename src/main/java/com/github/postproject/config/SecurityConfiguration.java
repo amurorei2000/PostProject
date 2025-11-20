@@ -9,7 +9,10 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
@@ -29,7 +32,7 @@ public class SecurityConfiguration {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.headers(header -> header.frameOptions(
-                        frameOptions -> frameOptions.sameOrigin())
+                        HeadersConfigurer.FrameOptionsConfig::sameOrigin)
                 )
                 // 로그인 폼 사용 안함
                 .formLogin(AbstractHttpConfigurer::disable)
@@ -49,7 +52,15 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(
                         auth -> auth
                                 // 인증 없이 사용 가능한 uri
-                                .requestMatchers("/resources/static/**", "/api/users/*", "/api/post/**", "/api/comment/**", "/api/like/**", "/api/sign/**").permitAll()
+                                .requestMatchers("/resources/static/**",
+                                        "/api/users/*",
+//                                        "/api/post/**",
+//                                        "/api/comment/**",
+                                        "/api/sign/*",
+                                        "/v3/api-docs/**",
+                                        "/swagger-ui/**",
+                                        "/swagger-resources/**"
+                                ).permitAll()
                                 .anyRequest().authenticated()
                 )
                 // 필터 우선 적용 처리
@@ -83,5 +94,11 @@ public class SecurityConfiguration {
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
+    }
+
+    // 패스워드 인코딩
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }

@@ -12,10 +12,12 @@ import com.github.postproject.service.exceptions.NotFoundException;
 import com.github.postproject.web.dto.auth.Login;
 import com.github.postproject.web.dto.auth.SignUp;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,6 +25,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class AuthService {
 
     private final UsersRepository usersRepository;
@@ -30,11 +33,12 @@ public class AuthService {
     private final RolesRepository rolesRepository;
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider jwtTokenProvider;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional
     public boolean signUp(SignUp signUpRequest) {
         String email = signUpRequest.getEmail();
-        String password = signUpRequest.getPassword();
+        String password = passwordEncoder.encode(signUpRequest.getPassword());
 
         // 이미 등록된 이메일이 있는지 확인
         if (usersRepository.existsByEmail(email)) {
@@ -53,7 +57,7 @@ public class AuthService {
                 .orElseThrow(() -> new NotFoundException("해당하는 Role이 없습니다."));
 
         // 유저 Role 정보를 DB에 등록
-        UserRole userRole = userRoleRepository.save(UserRole.builder()
+        userRoleRepository.save(UserRole.builder()
                         .users(user)
                         .roles(foundRole)
                         .build()
@@ -62,11 +66,10 @@ public class AuthService {
         return true;
     }
 
-
     public String login(Login loginRequest) {
         try {
             String email = loginRequest.getEmail();
-            String password = loginRequest.getPassword();
+            String password = passwordEncoder.encode(loginRequest.getPassword());
 
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(email, password)
@@ -76,6 +79,12 @@ public class AuthService {
 
             Users foundUser = usersRepository.findByEmailFetchJoin(email)
                     .orElseThrow(() -> new NotFoundException("해당 유저를 찾을 수 없습니다."));
+
+            if (!foundUser.getPassword().equals(password)) {
+                throw new RuntimeException("패스워드가 다릅니다.");
+            }
+
+            log.info("found user: {}", foundUser);
 
             List<String> roles = foundUser.getUserRoles().stream()
                     .map(UserRole::getRoles)

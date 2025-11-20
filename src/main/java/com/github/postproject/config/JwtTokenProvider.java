@@ -62,7 +62,14 @@ public class JwtTokenProvider {
 
     // request 헤더에서 토큰 정보를 가져오기
     public String resolveToken(HttpServletRequest req) {
-        return req.getHeader("Authorization");
+        String bearerToken = req.getHeader("Authorization");
+
+        if (bearerToken != null && bearerToken.startsWith("Bearer ")) {
+            // Bearer 토큰에서 실제 토큰 부분만 자르기
+            return bearerToken.substring(7);
+        }
+
+        return null;
     }
 
     // jwt 토큰에서 토큰의 유효성 검사하기
@@ -94,6 +101,7 @@ public class JwtTokenProvider {
 
     // 토큰에서 인증 정보 가져오기
     public Authentication getAuthentication(String token) {
+        // jwt 토큰의 subject 값으로 인증 정보 로드
         UserDetails userDetails = userDetailsService.loadUserByUsername(getUserEmail(token));
         return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
     }

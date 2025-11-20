@@ -66,34 +66,6 @@ public class UserService {
         }
     }
 
-    public UserRes login(UserReq userReq) {
-        String email = userReq.getEmail();
-        String password = userReq.getPassword();
-
-        try {
-            Users foundUser = usersRepository.findByEmail(email)
-                    .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 사용자가 없습니다."));
-
-            if (foundUser.getPassword().equals(password)) {
-                return UserRes.builder()
-                        .id(foundUser.getId())
-                        .email(foundUser.getEmail())
-                        .build();
-            } else {
-                log.info("아이디 또는 패스워드를 잘못 입력했습니다.");
-                return null;
-            }
-
-
-        } catch (RuntimeException ex) {
-            throw new NotAcceptException("사용자 정보를 DB에 저장하는 도중에 에러가 발생했습니다!");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("사용자를 생성하는 도중에 에러가 발생했습니다!");
-        }
-    }
-
     public Boolean signOut() {
         // access token 블랙리스트에 등록
 

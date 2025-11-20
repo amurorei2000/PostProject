@@ -27,15 +27,6 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 
-    @Operation(summary = "로그인")
-    @PostMapping("/login")
-    @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<UserRes> login(@RequestBody UserReq userReq) {
-        UserRes user = userService.login(userReq);
-        log.info("login user: {}", user);
-        return ResponseEntity.status(HttpStatus.OK).body(user);
-    }
-
     @Operation(summary = "로그아웃")
     @PostMapping("/signOut")
     @ResponseStatus(HttpStatus.OK)

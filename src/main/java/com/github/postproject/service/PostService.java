@@ -62,11 +62,16 @@ public class PostService {
         Posts foundPost = postsRepository.findById(postId)
                 .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 게시물이 없습니다."));
 
-        if (foundPost == null) {
-            return false;
-        }
-
         postsRepository.deleteById(postId);
         return true;
+    }
+
+    @Transactional
+    public Posts viewPostById(int postId) {
+        Posts foundPost = postsRepository.findByIdWithLock(postId)
+                .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 게시물이 없습니다."));
+
+        foundPost.increaseViewCnt();
+        return foundPost;
     }
 }

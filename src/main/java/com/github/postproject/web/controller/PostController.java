@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/post")
 @RequiredArgsConstructor
+@PreAuthorize("hasRole('ROLE_USER')")
 @Slf4j
 public class PostController {
 
@@ -61,6 +63,25 @@ public class PostController {
                 )
                 .toList();
         return ResponseEntity.status(HttpStatus.OK).body(postResponses);
+    }
+
+    @Operation(summary = "게시글 아이디로 가져오기")
+    @GetMapping("/viewPost/{postId}")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<PostRes> viewPostById(@PathVariable int postId) {
+        Posts foundPost = postService.viewPostById(postId);
+        PostRes response = PostRes.builder()
+                .title(foundPost.getTitle())
+                .content(foundPost.getContent())
+                .writerId(foundPost.getUsers().getId())
+                .authorName(foundPost.getWriterName())
+                .viewCount(foundPost.getViewCnt())
+                .likeCount(foundPost.getLikeCnt())
+                .createdAt(foundPost.getCreatedAt())
+                .updatedAt(foundPost.getUpdatedAt())
+                .build();
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @Operation(summary = "게시글 생성")
