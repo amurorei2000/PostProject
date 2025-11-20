@@ -24,7 +24,7 @@ public class PostController {
     private final PostService postService;
 
     @Operation(summary = "모든 게시글 가져오기")
-    @GetMapping("/viewAllPosts")
+    @GetMapping("/viewAll")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<PostRes>> viewAllPosts() {
         List<Posts> results = postService.viewAllPosts();
@@ -45,7 +45,7 @@ public class PostController {
     }
 
     @Operation(summary = "이메일로 게시글 가져오기")
-    @GetMapping("/viewPostsByEmail")
+    @GetMapping("/view")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<PostRes>> viewPostsByEmail(@RequestParam(name = "email") String email) {
         List<Posts> results = postService.viewPostsByEmail(email);
@@ -66,7 +66,7 @@ public class PostController {
     }
 
     @Operation(summary = "게시글 아이디로 가져오기")
-    @GetMapping("/viewPost/{postId}")
+    @GetMapping("/{postId}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<PostRes> viewPostById(@PathVariable int postId) {
         Posts foundPost = postService.viewPostById(postId);
@@ -104,9 +104,9 @@ public class PostController {
     }
 
     @Operation(summary = "게시글 수정")
-    @PostMapping("/updatePost/{postId}")
+    @PutMapping("/{postId}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<PostRes> updatePost(@PathVariable Integer postId, @RequestBody PostReq postReq) {
+    public ResponseEntity<PostRes> updatePost(@PathVariable int postId, @RequestBody PostReq postReq) {
         Posts updatedPost = postService.updatePost(postId, postReq);
         PostRes response = PostRes.builder()
                 .title(updatedPost.getTitle())
@@ -124,9 +124,9 @@ public class PostController {
     }
 
     @Operation(summary = "게시글 삭제")
-    @DeleteMapping("/deletePost/{postId}")
+    @DeleteMapping("/{postId}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<String> deletePost(@PathVariable Integer postId) {
+    public ResponseEntity<String> deletePost(@PathVariable int postId) {
         boolean result = postService.deletePost(postId);
 
         if (result) {

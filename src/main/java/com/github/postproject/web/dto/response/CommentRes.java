@@ -14,6 +14,5 @@ public class CommentRes {
     Integer id;
     String content;
     String writer;
-    Integer postId;
     String postedAt;
 }

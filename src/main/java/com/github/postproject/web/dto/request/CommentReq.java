@@ -12,5 +12,4 @@ import lombok.ToString;
 public class CommentReq {
     String writerId;
     String content;
-    Integer postId;
 }

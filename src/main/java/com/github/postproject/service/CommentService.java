@@ -29,12 +29,12 @@ public class CommentService {
     private final PostsRepository postsRepository;
 
     @Transactional
-    public CommentRes createComment(CommentReq commentReq) {
+    public CommentRes createComment(int postId, CommentReq commentReq) {
         try {
             Users writer = usersRepository.findByEmail(commentReq.getWriterId())
                     .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 유저가 없습니다."));
 
-            Posts foundPost = postsRepository.findById(commentReq.getPostId())
+            Posts foundPost = postsRepository.findById(postId)
                     .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 포스팅을 찾을 수 없습니다."));
 
             Comments commentEntity = Comments.builder()
@@ -54,7 +54,6 @@ public class CommentService {
                     .id(savedComment.getId())
                     .content(savedComment.getContent())
                     .writer(savedComment.getWriterName())
-                    .postId(savedComment.getPosts().getId())
                     .postedAt(savedComment.getCreatedAt().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")))
                     .build();
 
@@ -68,12 +67,12 @@ public class CommentService {
     }
 
     @Transactional
-    public CommentRes updateComment(Integer commentId, String newContent) {
+    public CommentRes updateComment(int commentId, CommentReq commentReq) {
         try {
             Comments foundComment = commentsRepository.findById(commentId)
                     .orElseThrow(() -> new NotFoundException("해당 아이디로 댓글을 찾을 수 없습니다."));
 
-            foundComment.setContent(newContent);
+            foundComment.setContent(commentReq.getContent());
             foundComment.setUpdatedAt(LocalDateTime.now());
 
             String updateTime = foundComment.getUpdatedAt().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -82,7 +81,6 @@ public class CommentService {
                     .id(foundComment.getId())
                     .content(foundComment.getContent())
                     .writer(foundComment.getWriterName())
-                    .postId(foundComment.getPosts().getId())
                     .postedAt(updateTime)
                     .build();
 
@@ -95,7 +93,7 @@ public class CommentService {
         }
     }
 
-    public boolean deleteComment(Integer commentId) {
+    public boolean deleteComment(int commentId) {
         try {
             commentsRepository.deleteById(commentId);
             return true;

@@ -28,6 +28,15 @@ public class PostService {
         return postsRepository.findAllByWriterName(email);
     }
 
+    @Transactional
+    public Posts viewPostById(int postId) {
+        Posts foundPost = postsRepository.findByIdWithLock(postId)
+                .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 게시물이 없습니다."));
+
+        foundPost.increaseViewCnt();
+        return foundPost;
+    }
+
     public Posts createPost(PostReq postReq) {
         Users foundUser = usersRepository.findByEmail(postReq.getWriterId())
                 .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 유저가 없습니다."));
@@ -66,12 +75,4 @@ public class PostService {
         return true;
     }
 
-    @Transactional
-    public Posts viewPostById(int postId) {
-        Posts foundPost = postsRepository.findByIdWithLock(postId)
-                .orElseThrow(() -> new NotFoundException("해당 아이디를 가진 게시물이 없습니다."));
-
-        foundPost.increaseViewCnt();
-        return foundPost;
-    }
 }

@@ -23,8 +23,9 @@ public class LikeController {
     private final LikeService likeService;
 
     @Operation(summary = "좋아요 추가/삭제")
-    @PostMapping("/{postId}/like")
-    public ResponseEntity<Map<String, Boolean>> toggleLike(@PathVariable Integer postId, @AuthenticationPrincipal CustomUserDetails userDetails) {
+    @PostMapping("/{postId}")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<Map<String, Boolean>> toggleLike(@PathVariable int postId, @AuthenticationPrincipal CustomUserDetails userDetails) {
         String userEmail =  userDetails.getUsername();
 
         boolean result = likeService.toggleLike(postId, userEmail);
@@ -33,6 +34,4 @@ public class LikeController {
 
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
-
-
 }

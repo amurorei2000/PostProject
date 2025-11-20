@@ -53,9 +53,6 @@ public class SecurityConfiguration {
                         auth -> auth
                                 // 인증 없이 사용 가능한 uri
                                 .requestMatchers("/resources/static/**",
-                                        "/api/users/*",
-//                                        "/api/post/**",
-//                                        "/api/comment/**",
                                         "/api/sign/*",
                                         "/v3/api-docs/**",
                                         "/swagger-ui/**",

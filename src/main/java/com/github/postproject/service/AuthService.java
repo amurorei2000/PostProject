@@ -69,7 +69,7 @@ public class AuthService {
     public String login(Login loginRequest) {
         try {
             String email = loginRequest.getEmail();
-            String password = passwordEncoder.encode(loginRequest.getPassword());
+            String password = loginRequest.getPassword();
 
             Authentication authentication = authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(email, password)
@@ -79,10 +79,6 @@ public class AuthService {
 
             Users foundUser = usersRepository.findByEmailFetchJoin(email)
                     .orElseThrow(() -> new NotFoundException("해당 유저를 찾을 수 없습니다."));
-
-            if (!foundUser.getPassword().equals(password)) {
-                throw new RuntimeException("패스워드가 다릅니다.");
-            }
 
             log.info("found user: {}", foundUser);
 
